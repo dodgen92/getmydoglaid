@@ -1,0 +1,24 @@
+{
+  "name": "getmydoglaid",
+  "version": "1.0.0",
+  "description": "App written in javascript, built with express. Does as indicated",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dodgen92/getmydoglaid.git"
+  },
+  "author": "T Remington Dodgen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dodgen92/getmydoglaid/issues"
+  },
+  "homepage": "https://github.com/dodgen92/getmydoglaid#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
