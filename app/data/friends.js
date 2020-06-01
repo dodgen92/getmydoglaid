@@ -2,14 +2,14 @@
 var friends = [
 	{
 		"name": "Cat Benetar",
-		"photo": "../images/Catbenetar.png",
-		"scores": [1,1,1,1,1]
+		"photo": "../images/Catbenetar.jpg",
+		"scores": [1,1,1,1,1,1,1]
 		//10
 	},
 	{
 		"name": "Buster",
-		"photo": "../images/Buster.png",
-		"scores": [5,5,5,5,5]
+		"photo": "../images/Buster.jpg",
+		"scores": [5,5,5,5,5,5,5,5]
 		//55		
 	}
 ];

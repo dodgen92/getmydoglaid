@@ -1,3 +1,4 @@
+
 var tableData = require("../data/friends");
 
 //Routing
@@ -32,9 +33,7 @@ module.exports = function(app) {
     
     for(var i=0; i < tableData.length; i++){
     
-      //console.log("cross check the new friend entry with existing ones")
     
-      //Check each score and sum difference in points
       var currentComparison = 0;
 
       //console.log("newFriend.scores.length: " + newFriend.scores.length)
@@ -64,7 +63,7 @@ module.exports = function(app) {
 
     }
 
-    //If 2 friends have the same comparison, then the newest entry in the array is chosen
+    
     var bestFriendMatch = tableData[bestMatchPosition];
     //console.log("bestFriendMatch.name: " + bestFriendMatch.name)
 

@@ -1,26 +1,22 @@
-//node package manager requirements 
-var express = require('express');
-var bodyParser = require('body-parser');
-var path = require('path');
+//Dependencies
+var express = require("express");
+var path = require("path");
 
-//configure express to port 3000 localhost
+//Create express server
 var app = express();
+
+//Define the port
 var PORT = process.env.PORT || 3000;
 
-// Sets up the Express app using bodyparser to view data easily
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.text());
-app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
-// set up static files in express
-app.use(express.static(path.join(__dirname, 'app/public')));
+//Setup for data parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-//routes
-require('./app/routing/api-routes.js')(app);
-require('./app/routing/html-routes.js')(app);
+//Router
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
-// Starts the server to begin listening
-// =============================================================
-app.listen(PORT, function () {
-	console.log('App listening on PORT ' + PORT);
-});
+//Listner
+app.listen(PORT, function() {
+    console.log("App listening on PORT: " + PORT);
+  });
